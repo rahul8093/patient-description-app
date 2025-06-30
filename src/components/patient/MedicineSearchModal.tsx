@@ -29,12 +29,12 @@ const MedicineSearchModal: FC<Props> = ({ isOpen, onClose, searchQuery, setSearc
     // Handle selecting a medicine and adding it to the global context
     const handleMedicineSelect = (medicine: Medicine) => {
         addMedicine(medicine); // Add the selected medicine to the global context
-        // onClose(); // Close the modal after selecting
+        onClose(); 
         console.log('Updated Medicines:', medicine); 
     };
     const handleCustomMedicineSelect = (name: string) => {
         addMedicineByName(name); // Add the selected name to the global context
-        // onClose(); // Close the modal after selecting
+        onClose(); 
         console.log('Updated Medicines:', name); 
     };
     return (

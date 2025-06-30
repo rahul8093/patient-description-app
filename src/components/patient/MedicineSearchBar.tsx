@@ -25,7 +25,10 @@ const MedicineSearchBar: FC = () => {
 
       <MedicineSearchModal
         isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
+        onClose={() => {
+          setIsModalOpen(false)
+          setSearchQuery('')
+        }}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
       />

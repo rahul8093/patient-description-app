@@ -23,7 +23,7 @@ const PatientDetails: FC<PatientDetailsProps> = ({patient}) => {
         <div className="flex items-center px-4 gap-6 text-[#1C2024] basis-[33.33%]">
           <div className="flex items-center gap-1 border-x border-borderGray px-4 h-full w-1/2">
             <IconPhone />
-            <span className="text-mono">+91-9096396014</span>
+            <span className="text-mono whitespace-nowrap text-sm">+91-9096396014</span>
           </div>
           <div className="flex gap-6">
             <span className="text-mono flex items-center gap-1">
